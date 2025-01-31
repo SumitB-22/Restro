@@ -1,0 +1,25 @@
+<div class="restaurant-container">
+    <div class="card-row">
+      <div class="restaurant-card" *ngFor="let restaurant of firstRow">
+        <h3 class="name">{{ restaurant.name }}</h3>
+        <p class="description">{{ restaurant.description }}</p>
+        <div class="details">
+          <span class="type">{{ restaurant.type }}</span>
+          <span class="service">{{ restaurant.serviceType }}</span>
+          <span class="hours">{{ restaurant.openingHours }}</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card-row">
+      <div class="restaurant-card" *ngFor="let restaurant of secondRow">
+        <h3 class="name">{{ restaurant.name }}</h3>
+        <p class="description">{{ restaurant.description }}</p>
+        <div class="details">
+          <span class="type">{{ restaurant.type }}</span>
+          <span class="service">{{ restaurant.serviceType }}</span>
+          <span class="hours">{{ restaurant.openingHours }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
